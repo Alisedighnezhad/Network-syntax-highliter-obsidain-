@@ -1,0 +1,11 @@
+{
+  "id": "network-syntax-highlighter",
+  "name": "Network Syntax Highlighter",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Syntax highlighting for network device languages: MikroTik RouterOS, Cisco IOS, Cisco IOS-XE, Cisco NX-OS, and more.",
+  "author": "Ali",
+  "authorUrl": "https://github.com/your-username",
+  "fundingUrl": "",
+  "isDesktopOnly": false
+}

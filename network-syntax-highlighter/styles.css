@@ -1,0 +1,306 @@
+/* ============================================================
+   Network Syntax Highlighter
+   Professional Theme
+   Designed for Cisco IOS & MikroTik RouterOS
+   ============================================================ */
+
+/* ============================================================
+   Theme Variables
+   ============================================================ */
+
+:root {
+
+    /* Primary */
+
+    --network-path:            #61afef;
+    --network-command:         #e5c07b;
+    --network-property:        #56b6c2;
+    --network-value:           #98c379;
+
+    /* Semantic */
+
+    --network-firewall:        #ff9e64;
+    --network-protocol:        #7dcfff;
+    --network-interface:       #73daca;
+
+    /* Shared */
+
+    --network-string:          #9ece6a;
+    --network-comment:         #6b7280;
+    --network-variable:        #f7768e;
+
+    --network-ip:              #7dcfff;
+    --network-number:          #d19a66;
+    --network-operator:        #c0caf5;
+    --network-punctuation:     #7f849c;
+
+    /* Cisco */
+
+    --network-important:       #f7768e;
+    --network-acl:             #ff9e64;
+    --network-keyword:         #bb9af7;
+    --network-parameter:       #56b6c2;
+
+    /* Wrapper */
+
+    --network-border:          rgba(255,255,255,.08);
+    --network-badge-bg:        rgba(255,255,255,.05);
+    --network-badge-color:     rgba(255,255,255,.65);
+
+}
+
+/* ============================================================
+   Wrapper
+   ============================================================ */
+
+.network-syntax-block {
+
+    position: relative;
+    margin: 1.25rem 0;
+
+}
+
+.network-syntax-block pre {
+
+    margin: 0;
+    border-radius: 12px;
+    overflow-x: auto;
+
+    border: 1px solid var(--network-border);
+
+}
+
+/* ============================================================
+   Badge
+   ============================================================ */
+
+.network-syntax-badge {
+
+    position: absolute;
+
+    top: 10px;
+    right: 12px;
+
+    padding: 2px 8px;
+
+    border-radius: 999px;
+
+    font-size: .70rem;
+
+    font-weight: 600;
+
+    font-family: var(--font-interface);
+
+    letter-spacing: .06em;
+
+    text-transform: uppercase;
+
+    color: var(--network-badge-color);
+
+    background: var(--network-badge-bg);
+
+    backdrop-filter: blur(6px);
+
+    pointer-events: none;
+
+    user-select: none;
+
+}
+
+/* ============================================================
+   RouterOS
+   ============================================================ */
+
+.token.path {
+
+    color: var(--network-path);
+
+    font-weight: 700;
+
+}
+
+.token.command {
+
+    color: var(--network-command);
+
+    font-weight: 700;
+
+}
+
+.token.script-keyword {
+
+    color: #c678dd;
+
+    font-weight: 700;
+
+}
+
+.token.property {
+
+    color: var(--network-property);
+
+    font-weight: 600;
+
+}
+
+.token.value {
+
+    color: var(--network-value);
+
+}
+
+.token.firewall {
+
+    color: var(--network-firewall);
+
+    font-weight: 700;
+
+}
+
+.token.protocol {
+
+    color: var(--network-protocol);
+
+    font-weight: 600;
+
+}
+
+.token.interface {
+
+    color: var(--network-interface);
+
+    font-style: italic;
+
+    font-weight: 600;
+
+}
+
+/* ============================================================
+   Cisco IOS
+   ============================================================ */
+
+.token.keyword {
+
+    color: var(--network-keyword);
+
+    font-weight: 700;
+
+}
+
+.token.parameter {
+
+    color: var(--network-parameter);
+
+}
+
+.token.important {
+
+    color: var(--network-important);
+
+    font-weight: 700;
+
+}
+
+.token.acl-action {
+
+    color: var(--network-acl);
+
+    font-weight: 700;
+
+}
+
+/* ============================================================
+   Shared
+   ============================================================ */
+
+.token.comment {
+
+    color: var(--network-comment);
+
+    font-style: italic;
+
+    opacity: .85;
+
+}
+
+.token.string {
+
+    color: var(--network-string);
+
+}
+
+.token.variable {
+
+    color: var(--network-variable);
+
+    font-weight: 600;
+
+}
+
+.token.ipv4,
+.token.ipv6 {
+
+    color: var(--network-ip);
+
+    font-weight: 700;
+
+}
+
+.token.mac-address {
+
+    color: #7dd3fc;
+
+    font-weight: 600;
+
+}
+
+.token.duration,
+.token.percentage,
+.token.hexadecimal,
+.token.number {
+
+    color: var(--network-number);
+
+}
+
+.token.operator {
+
+    color: var(--network-operator);
+
+}
+
+.token.punctuation {
+
+    color: var(--network-punctuation);
+
+}
+
+/* ============================================================
+   Optional Improvements
+   ============================================================ */
+
+.network-syntax-block pre::-webkit-scrollbar {
+
+    height: 8px;
+
+}
+
+.network-syntax-block pre::-webkit-scrollbar-thumb {
+
+    background: rgba(255,255,255,.18);
+
+    border-radius: 100px;
+
+}
+
+.network-syntax-block pre::-webkit-scrollbar-thumb:hover {
+
+    background: rgba(255,255,255,.30);
+
+}
+
+.network-syntax-block ::selection {
+
+    background: rgba(97,175,239,.28);
+
+}
